@@ -1,0 +1,8 @@
+[project]
+name = "diaget"
+version = "0.1.0"
+description = "Application to get HTML content of a book"
+requires-python = ">=3.14"
+dependencies = [
+    "selenium>=4.40.0",
+]

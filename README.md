@@ -7,10 +7,37 @@
 - Save the HTML content to a file
 
 # Usage
-- `dget <url> -o <output_file>`
 
-# Examplle URL
-- `https://reader.dia.hu/document/Krasznahorkai_Laszlo-Az_ellenallas_melankoliaja-1083`
+```text
+usage: dget [-h] -o OUTPUT [--timeout TIMEOUT] [--user-agent USER_AGENT]
+            [--min-text-chars MIN_TEXT_CHARS] [--format {html,text}]
+            url
+```
+
+# Example
+
+### URL
+
+<https://reader.dia.hu/document/Krasznahorkai_Laszlo-Az_ellenallas_melankoliaja-1083>
+
+### Text excerpt
+
+```text
+Krasznahorkai László
+Az ellenállás melankóliája
+Digitális Irodalmi Akadémia
+© Petőfi Irodalmi Múzeum • Budapest • 2011
+
+Az ellenállás melankóliája
+
+Telik, de nem múlik.
+
+Rendkívüli állapotok
+
+Bevezetés
+
+Minthogy a fagyba dermedt dél-alföldi településeket a Tiszától majdnem a Kárpátok lábáig összekötő személyvonat a sínek mentén tanácstalanul őgyelgő vasutas zavaros magyarázatai s a peronra idegesen ki-kiszaladó állomásfőnök egyre határozottabb ígéretei ellenére sem érkezett meg („Hát, kérem, ez megint fölszívódott…” – legyintett kajánul savanyú képpel a vasutas), a mindössze két, csupán efféle,
+```
 
 # Implementation 
 - We will use Selenium with a headless browser to get the content of the book 
